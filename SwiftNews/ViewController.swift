@@ -8,14 +8,16 @@ class ViewController: UITableViewController {
     let newsUrlStrings = [
         "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://rss.rssad.jp/rss/impresswatch/pcwatch.rdf&num=8", 
         "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://rss.itmedia.co.jp/rss/2.0/news_bursts.xml&num=8", 
-        "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://jp.techcrunch.com/feed/&num=8", 
+        "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://jp.techcrunch.com/feed/&num=8",
+        "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://9to5mac.com/feed/&num=8",
     ]
     
     // 画像ファイル名の配列を作る
     let imageNames = [
         "pcwatch", 
         "itmedia", 
-        "techcrunch", 
+        "techcrunch",
+        "9to5mac",
     ]
     override func viewDidLoad() {
       self.refresh(self)
